@@ -1,0 +1,55 @@
+{
+  "nav": {
+    "home": "ACCUEIL",
+    "about": "À PROPOS",
+    "services": "SERVICES",
+    "projects": "PROJETS",
+    "technologies": "TECHNOLOGIES"
+  },
+  "buttons": {
+    "book": "RÉSERVER AVEC MOI"
+  },
+  "hero": {
+    "title": "Salut, je suis",
+    "subtitle": "Je suis un développeur full-stack spécialisé dans la conception et la livraison d’applications web robustes, maintenables et performantes, du frontend au backend.",
+    "socials": {
+      "github": "GITHUB",
+      "linkedin": "LINKEDIN",
+      "twitter": "TWITTER"
+    },
+    "code": {
+      "passion": "Là où la logique rencontre la créativité"
+    }
+  },
+  "about": {
+    "title": "À PROPOS DE MOI",
+    "p1": "Je suis un développeur web passionné et attentif aux détails, qui aime transformer des idées en expériences numériques fonctionnelles, propres et centrées sur l’utilisateur. Je travaille principalement avec React côté frontend et Laravel côté backend.",
+    "p2": "Ce qui me motive le plus, c’est comprendre le fonctionnement interne des applications, de la gestion de l’état et du routage côté client à la conception d’API et à la gestion des données côté serveur.",
+    "p3": "Mon objectif est de devenir un développeur full-stack solide et fiable, capable de créer des produits utiles et d’évoluer continuellement avec la technologie."
+  },
+  "services": {
+    "title": "SERVICES",
+    "backend": {
+      "title": "Développement Backend",
+      "description": "J’aime construire des systèmes robustes, sécurisés et évolutifs. Je travaille principalement avec Laravel pour concevoir des API, gérer les bases de données et implémenter la logique serveur."
+    },
+    "frontend": {
+      "title": "Développement Frontend",
+      "description": "Création d’interfaces modernes et intuitives en respectant les meilleures pratiques. Je mets l’accent sur la performance, l’accessibilité et l’expérience utilisateur."
+    }
+  },
+  "projects": {
+    "YSFSHOOP":{
+      "description": "Cette application e-commerce est développée comme un système full-stack avec un frontend React et un backend Laravel. Elle fournit des API REST pour la gestion des produits, paniers et commandes, avec authentification, autorisation et base de données relationnelle garantissant l’intégrité des données."
+    },
+        "bloggy" :{
+      "description": "Une plateforme de blog multi-utilisateurs construite avec Laravel et React, utilisant MySQL. Elle inclut l’authentification, les opérations CRUD, les commentaires, un design responsive et une interface dynamique basée sur des composants."
+    },
+    "CRM" : {
+      "description": "Un CRM basé sur React utilisant Redux Toolkit pour la gestion de l’état. Il propose la gestion des opportunités avec opérations CRUD et un pipeline de ventes en drag-and-drop, avec une interface Tailwind CSS responsive."
+    }
+  },
+    "techstack" :{
+    "title" : "MON STACK TECHNIQUE"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "nav": {
+    "home": "HOME",
+    "about": "ABOUT",
+    "services": "SERVICES",
+    "projects": "PROJECTS",
+    "technologies": "TECHSTACK"
+  },
+  "buttons": {
+    "book": "BOOK WITH ME"
+  },
+  "hero": {
+    "title": "Hey, I'm",
+    "subtitle": "I am a full-stack developer focused on designing and delivering robust, maintainable web applications from frontend interfaces to backend infrastructure.",
+    "socials": {
+      "github": "GITHUB",
+      "linkedin": "LINKEDIN",
+      "twitter": "TWITTER"
+    },
+    "passion": "Where logic meets creativity"
+  },
+  "about": {
+    "title": "ABOUT ME",
+    "p1": "I’m a passionate and detail-oriented web developer who enjoys turning ideas into functional, clean, and user-focused digital experiences. I work mainly with React on the front end and Laravel on the back end, and I’m constantly improving my skills by building real projects, experimenting with new tools, and solving practical problems.",
+    "p2": "What drives me most is understanding how things work under the hood from managing state and routing on the client side to designing APIs and handling data on the server. I care deeply about code quality, performance, and user experience, and I always try to write code that is readable, scalable, and maintainable.",
+    "p3": "My goal is to grow into a strong, reliable full-stack developer who creates meaningful products and continuously evolves with technology."
+  },
+  "services": {
+    "title": "SERVICES",
+    "backend": {
+      "title": "Backend Development",
+      "description": "I enjoy building robust, secure, and scalable systems. I work mainly with Laravel, designing APIs, managing databases, and handling authentication and server-side logic. I care about clean architecture, performance, and reliability."
+    },
+    "frontend": {
+      "title": "Frontend Development",
+      "description": "Building modern and intuitive user interfaces with best practices in mind. I focus on performance, accessibility, and user experience while following modern web standards."
+    }
+  },
+  "projects": {
+    "YSFSHOOP": {
+      "description": "This e-commerce application is built as a full-stack system with a React-based frontend and a Laravel backend. It provides RESTful APIs for product, cart, and order management, includes authentication and authorization, and uses a relational database to ensure data integrity. The architecture focuses on scalability, clean code, and efficient request handling"
+    },
+    "bloggy": {
+      "description": "A multi-user blogging platform built with Laravel and React, using MySQL for data storage. Features include authentication, CRUD posts, comments, responsive design with CSS, and a dynamic, component-based UI"
+    },
+    "CRM": {
+      "description": "A React-based CRM using Redux Toolkit (RTK) for state management. It features opportunity management with CRUD operations and a drag-and-drop sales pipeline, all built with a responsive Tailwind CSS frontend for seamless user interaction"
+    }
+  },
+  "techstack" :{
+    "title" : "TECHSTACK"
+  }
+}
