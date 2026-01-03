@@ -12,29 +12,23 @@ export default function Footer() {
             <h2 className="myfont">YOUSSEF <br />MOUSSADDEQ</h2>
             </Link>
             <p className="text-gray-400 text-sm">
-              © 2024 Charles. All rights reserved.
+              © 2026 YM
             </p>
           </div>
 
           {/* Right Section - Social Links */}
           <div className="flex gap-8">
             <a
-              href="#"
+              href="https://github.com/fcbysf"
               className="text-gray-400 hover:text-white transition-colors font-semibold text-sm"
             >
               GITHUB
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/youssef-moussaddeq-1a8585352?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
               className="text-gray-400 hover:text-white transition-colors font-semibold text-sm"
             >
-              LINKEDIN
-            </a>
-            <a
-              href="#"
-              className="text-gray-400 hover:text-white transition-colors font-semibold text-sm"
-            >
-              TWITTER
+              LINKEDIN 
             </a>
           </div>
         </div>

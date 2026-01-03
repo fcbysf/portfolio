@@ -14,7 +14,6 @@ export default function Header() {
     { label: t("nav.technologies"), href: "#techstack" },
   ];
 
-
   return (
     <header className="md:sticky top-0 z-50 bg-white border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:ps-8">
@@ -33,7 +32,7 @@ export default function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-1 me-40">
+          <nav className="hidden md:flex items-center gap-1 lg:me-40">
             {navItems.map((item) => (
               <a
                 key={item.label}
@@ -43,8 +42,9 @@ export default function Header() {
                 {item.label}
               </a>
             ))}
+              <LanguageSwitcher show={"md:block lg:hidden"}/>
           </nav>
-          <LanguageSwitcher />
+          <LanguageSwitcher show={"lg:block"}/>
 
           {/* Mobile Menu Button */}
           <button
@@ -119,10 +119,13 @@ const languages = [
   { code: "fr", label: "FR", flag: "/france.svg" },
 ];
 
-function LanguageSwitcher() {
+function LanguageSwitcher({show}) {
   const { i18n } = useTranslation();
   const [open, setOpen] = useState(false);
-  const [selected, setSelected] = useState(languages[0]);
+  const lng = localStorage.getItem("lang");
+  const [selected, setSelected] = useState(
+    languages.find((lang) => lang.code === lng) || languages[0]
+  );
   const dropdownRef = useRef(null);
 
   // Close dropdown on outside click
@@ -145,7 +148,7 @@ function LanguageSwitcher() {
   };
 
   return (
-    <div className="relative w-27" ref={dropdownRef}>
+    <div className={`relative w-27 hidden ${show}`} ref={dropdownRef}>
       {/* Button */}
       <button
         onClick={() => setOpen(!open)}

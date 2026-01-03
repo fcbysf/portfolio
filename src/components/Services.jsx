@@ -54,22 +54,6 @@ const services = [
                 <p className="text-gray-600 text-lg leading-relaxed mb-8">
                   {service.description}
                 </p>
-                <button className="inline-flex items-center gap-2 px-6 py-3 bg-green-300 text-white rounded-lg font-semibold hover:bg-green-400 transition-colors">
-                  {t("buttons.book")}
-                  <svg
-                    className="w-4 h-4"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 5l7 7-7 7"
-                    />
-                  </svg>
-                </button>
               </div>
             </div>
           ))}

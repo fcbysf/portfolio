@@ -48,7 +48,8 @@ export default function Hero() {
               </a>
               <a
                 href="/Youssef_Moussaddeq_CV.pdf"
-                className="inline-flex items-center gap-2 px-3 py-3 bg-black/38 text-white rounded-lg font-semibold hover:text-green-200  transition-colors mb-8"
+                target="_blank"
+                className="inline-flex items-center gap-2 px-3 py-3 bg-black/40 text-white rounded-lg font-semibold hover:text-green-200  transition-colors mb-8"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

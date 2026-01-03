@@ -92,6 +92,45 @@ export default function Articles() {
       githublink: "https://github.com/Abderrahmane-lrt/SalesForce-CRM-SaaS",
       liveDemo: "https://sales-force-maroc-crm.vercel.app/",
     },
+    {
+      title : 'LIFE NOTE',
+      type: "(Note Taking App)",
+      bgColor: "bg-zinc-700 border border-gray-200",
+      textColor: "text-white",
+      description: t("projects.lifenote.description"),
+      image: "/noteApp/noteApp.PNG",
+      images: [
+        "/noteApp/noteLogin.PNG",
+        "/noteApp/notesnignup.PNG",
+        "/noteApp/home.PNG"
+      ],
+      techs: [
+        'reactIcon.png',
+        'cssIcon.png'
+      ],
+      githublink:'https://github.com/fcbysf/note-app',
+      liveDemo: 'https://note-app-six-navy.vercel.app/'  
+    },
+    {
+      title:'LEO MOVIES',
+      type: "(Movie App)",
+      bgColor: "bg-zinc-950",
+      textColor: "text-red-800 opacity-80  ",
+      description: t("projects.leoMovies.description"),
+      image: "/movieApp/movies.PNG",
+      images: [
+        "/movieApp/hover.PNG",
+        "/movieApp/oneMovie.PNG",
+        "/movieApp/serie.PNG",
+        "/movieApp/oneSerie.PNG",
+      ],
+      techs: [
+        'reactIcon.png',
+        'cssIcon.png'
+      ],
+      githublink:'https://github.com/fcbysf/leo-movies',
+      liveDemo: 'https://leomovies.vercel.app/'  
+    }
   ];
   return (
     <section id="projects" className="bg-white py-20 md:py-32 z-40 relative">

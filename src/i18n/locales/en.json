@@ -45,6 +45,12 @@
     },
     "CRM": {
       "description": "A React-based CRM using Redux Toolkit (RTK) for state management. It features opportunity management with CRUD operations and a drag-and-drop sales pipeline, all built with a responsive Tailwind CSS frontend for seamless user interaction"
+    },
+    "lifenote" :{
+      "description": "Note App is a secure note-taking application with authentication and protected routes. Users can create, edit, delete, and view notes (CRUD) stored in a JSON server API. Notes can be filtered by category and searched via a search bar for quick access."
+    },
+    "leoMovies":{
+      "description":"Movie App is a dynamic web application that fetches data from a complex movie API to display movies and series in a clean, user-friendly interface. Users can browse trending movies, view detailed information for each title, and explore TV series with ease."
     }
   },
   "techstack" :{

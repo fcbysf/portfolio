@@ -47,7 +47,14 @@
     },
     "CRM" : {
       "description": "Un CRM basé sur React utilisant Redux Toolkit pour la gestion de l’état. Il propose la gestion des opportunités avec opérations CRUD et un pipeline de ventes en drag-and-drop, avec une interface Tailwind CSS responsive."
+    },
+    "lifenote" :{
+      "description": "Note App est une application sécurisée pour la prise de notes avec authentification et routes protégées. Les utilisateurs peuvent créer, modifier, supprimer et consulter des notes (CRUD) stockées dans une API JSON server. Les notes peuvent être filtrées par catégorie et recherchées rapidement via la barre de recherche."
+    },
+    "leoMovies":{
+      "description":"Movie App est une application web dynamique qui récupère des données depuis une API de films complexe pour afficher films et séries dans une interface claire et agréable. Les utilisateurs peuvent parcourir les films populaires, consulter les détails de chaque titre et explorer les séries facilement."
     }
+
   },
     "techstack" :{
     "title" : "MON STACK TECHNIQUE"
