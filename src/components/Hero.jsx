@@ -20,23 +20,49 @@ export default function Hero() {
             <p className="text-lg lg:w-120 md:text-xl text-gray-600 mb-8">
               {t("hero.subtitle")}
             </p>
-
-            <button className="inline-flex items-center gap-2 px-6 py-3 bg-green-300 text-white rounded-lg font-semibold hover:bg-green-400 transition-colors mb-8">
-              {t("buttons.book")}
-              <svg
-                className="w-4 h-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
+            <div className="btns flex gap-2 items-center">
+              <a
+                href="/Youssef_Moussaddeq_CV.pdf"
+                download
+                className="inline-flex items-center gap-1 px-6 py-3 bg-green-300 text-white rounded-lg font-semibold hover:bg-green-400 transition-colors mb-8"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
-            </button>
+                {t("buttons.book")}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-file-download"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                  <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2" />
+                  <path d="M12 17v-6" />
+                  <path d="M9.5 14.5l2.5 2.5l2.5 -2.5" />
+                </svg>
+              </a>
+              <a
+                href="/Youssef_Moussaddeq_CV.pdf"
+                className="inline-flex items-center gap-2 px-3 py-3 bg-black/38 text-white rounded-lg font-semibold hover:text-green-200  transition-colors mb-8"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="icon icon-tabler icons-tabler-filled icon-tabler-eye"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 4c4.29 0 7.863 2.429 10.665 7.154l.22 .379l.045 .1l.03 .083l.014 .055l.014 .082l.011 .1v.11l-.014 .111a.992 .992 0 0 1 -.026 .11l-.039 .108l-.036 .075l-.016 .03c-2.764 4.836 -6.3 7.38 -10.555 7.499l-.313 .004c-4.396 0 -8.037 -2.549 -10.868 -7.504a1 1 0 0 1 0 -.992c2.831 -4.955 6.472 -7.504 10.868 -7.504zm0 5a3 3 0 1 0 0 6a3 3 0 0 0 0 -6" />
+                </svg>
+              </a>
+            </div>
 
             {/* Social Links */}
             <div className="flex gap-8 text-sm font-semibold">
