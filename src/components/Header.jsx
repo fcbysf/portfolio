@@ -102,7 +102,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="md:sticky top-0 z-50 bg-white border-b border-gray-200">
+    <header className="sticky top-0 z-50 bg-white border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:ps-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
