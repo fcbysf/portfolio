@@ -7,11 +7,98 @@ export default function Header() {
   const { t } = useTranslation();
 
   const navItems = [
-    { label: t("nav.home"), href: "#" },
-    { label: t("nav.about"), href: "#about" },
-    { label: t("nav.services"), href: "#services" },
-    { label: t("nav.projects"), href: "#projects" },
-    { label: t("nav.technologies"), href: "#techstack" },
+    {
+      label: t("nav.home"),
+      href: "#",
+      svg: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="19"
+          height="19"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="icon icon-tabler icons-tabler-filled icon-tabler-home"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M12.707 2.293l9 9c.63 .63 .184 1.707 -.707 1.707h-1v6a3 3 0 0 1 -3 3h-1v-7a3 3 0 0 0 -2.824 -2.995l-.176 -.005h-2a3 3 0 0 0 -3 3v7h-1a3 3 0 0 1 -3 -3v-6h-1c-.89 0 -1.337 -1.077 -.707 -1.707l9 -9a1 1 0 0 1 1.414 0m.293 11.707a1 1 0 0 1 1 1v7h-4v-7a1 1 0 0 1 .883 -.993l.117 -.007z" />
+        </svg>
+      ),
+    },
+    {
+      label: t("nav.about"),
+      href: "#about",
+      svg: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="19"
+          height="19"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="icon icon-tabler icons-tabler-filled icon-tabler-user"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M12 2a5 5 0 1 1 -5 5l.005 -.217a5 5 0 0 1 4.995 -4.783z" />
+          <path d="M14 14a5 5 0 0 1 5 5v1a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-1a5 5 0 0 1 5 -5h4z" />
+        </svg>
+      ),
+    },
+    {
+      label: t("nav.services"),
+      href: "#services",
+      svg: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="icon icon-tabler icons-tabler-filled icon-tabler-accessible"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M17 3.34a10 10 0 1 1 -14.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 14.995 -8.336zm-1.051 6.844a1 1 0 0 0 -1.152 -.663l-.113 .03l-2.684 .895l-2.684 -.895l-.113 -.03a1 1 0 0 0 -.628 1.884l.109 .044l2.316 .771v.976l-1.832 2.75l-.06 .1a1 1 0 0 0 .237 1.21l.1 .076l.101 .06a1 1 0 0 0 1.21 -.237l.076 -.1l1.168 -1.752l1.168 1.752l.07 .093a1 1 0 0 0 1.653 -1.102l-.059 -.1l-1.832 -2.75v-.977l2.316 -.771l.109 -.044a1 1 0 0 0 .524 -1.221zm-3.949 -4.184a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0 -3" />
+        </svg>
+      ),
+    },
+    {
+      label: t("nav.projects"),
+      href: "#projects",
+      svg: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="icon icon-tabler icons-tabler-filled icon-tabler-briefcase-2"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M14 2a3 3 0 0 1 3 3v1h2a3 3 0 0 1 3 3v9a3 3 0 0 1 -3 3h-14a3 3 0 0 1 -3 -3v-9a3 3 0 0 1 3 -3h2v-1a3 3 0 0 1 3 -3zm0 2h-4a1 1 0 0 0 -1 1v1h6v-1a1 1 0 0 0 -1 -1" />
+        </svg>
+      ),
+    },
+    {
+      label: t("nav.technologies"),
+      href: "#techstack",
+      svg: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="icon icon-tabler icons-tabler-outline icon-tabler-brand-juejin"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M2 12l10 7.422l10 -7.422" />
+          <path d="M7 9l5 4l5 -4" />
+          <path d="M11 6l1 .8l1 -.8l-1 -.8l-1 .8" />
+        </svg>
+      ),
+    },
   ];
 
   return (
@@ -34,17 +121,19 @@ export default function Header() {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-1 lg:me-40">
             {navItems.map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors"
-              >
-                {item.label}
-              </a>
+              <>
+                <a
+                  key={item.label}
+                  href={item.href}
+                  className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors"
+                >
+                  {item.label}
+                </a>
+              </>
             ))}
-              <LanguageSwitcher show={"md:block lg:hidden"}/>
+            <LanguageSwitcher show={"md:block lg:hidden"} />
           </nav>
-          <LanguageSwitcher show={"lg:block"}/>
+          <LanguageSwitcher show={"lg:block hidden"} />
 
           {/* Mobile Menu Button */}
           <button
@@ -69,42 +158,48 @@ export default function Header() {
               />
             </svg>
           </button>
-
-          {/* Book Button - Desktop */}
-          {/* <button className="hidden md:inline-flex items-center gap-2 px-6 py-2 bg-green-300 text-white rounded-lg font-semibold text-sm hover:bg-blue-700 transition-colors">
-            BOOK WITH ME
-            <svg
-              className="w-4 h-4"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 5l7 7-7 7"
-              />
-            </svg>
-          </button> */}
         </div>
 
-        {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden pb-4 border-t border-gray-200 ">
-            {navItems.map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                className="block px-4 py-2 text-sm font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+            <>
+              <div
+                className={`fixed inset-0 bg-black/40 z-40 md:hidden transition-opacity duration-300
+      ${isMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"}`}
+                onClick={() => setIsMenuOpen(false)}
+              />
+              <div
+                className={`fixed top-0 right-0 h-full w-72 bg-white z-50 md:hidden
+      transform transition-transform duration-300 ease-in-out
+      ${isMenuOpen ? "translate-x-0" : "translate-x-full"}`}
               >
-                {item.label}
-              </a>
-            ))}
-            <button className="w-full mt-2 px-4 py-2 bg-green-300 text-white rounded-lg font-semibold text-sm hover:bg-green-400">
-              BOOK WITH ME
-            </button>
-          </div>
+                {/* Close button */}
+                <div className="flex justify-between items-center ">
+                  <button
+                    onClick={() => setIsMenuOpen(false)}
+                    className="absolute top-4 right-4 p-2 text-xl"
+                  >
+                    ✕
+                  </button>
+                    <LanguageSwitcher show={"sm:block absolute top-4 "} />
+
+                </div>
+
+                <nav className="mt-10 flex flex-col">
+                  {navItems.map((item) => (
+                    <a
+                      key={item.label}
+                      href={item.href}
+                      onClick={() => setIsMenuOpen(false)}
+                      className="px-6 py-3 text-sm font-medium text-gray-700
+            hover:bg-gray-50 transition-colors duration-200 flex gap-1"
+                    >
+                      {item.svg}
+                      {item.label}
+                    </a>
+                  ))}
+                </nav>
+              </div>
+            </>
         )}
       </div>
     </header>
@@ -119,7 +214,7 @@ const languages = [
   { code: "fr", label: "FR", flag: "/france.svg" },
 ];
 
-function LanguageSwitcher({show}) {
+function LanguageSwitcher({ show }) {
   const { i18n } = useTranslation();
   const [open, setOpen] = useState(false);
   const lng = localStorage.getItem("lang");
@@ -148,7 +243,7 @@ function LanguageSwitcher({show}) {
   };
 
   return (
-    <div className={`relative w-27 hidden ${show}`} ref={dropdownRef}>
+    <div className={`relative w-27 block ${show}`} ref={dropdownRef}>
       {/* Button */}
       <button
         onClick={() => setOpen(!open)}
