@@ -115,7 +115,7 @@ export default function Articles() {
       title:'LEO MOVIES',
       type: "(Movie App)",
       bgColor: "bg-zinc-950",
-      textColor: "text-red-800 opacity-80  ",
+      textColor: "text-[#960a16]  opacity-80  ",
       description: t("projects.leoMovies.description"),
       image: "/movieApp/movies.PNG",
       images: [
