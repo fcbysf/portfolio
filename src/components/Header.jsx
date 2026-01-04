@@ -247,7 +247,7 @@ function LanguageSwitcher({ show }) {
       {/* Button */}
       <button
         onClick={() => setOpen(!open)}
-        className="w-full bg-white  rounded-md px-4 py-2 flex justify-between items-center focus:outline-none focus:ring-2 focus:ring-green-300"
+        className="w-full bg-white  rounded-md px-4 py-2 flex justify-between items-center focus:outline-none "
       >
         <div className="flex items-center space-x-2">
           <img src={selected.flag} className="w-5 h-5" alt={selected.label} />
