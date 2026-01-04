@@ -106,7 +106,8 @@ export default function Articles() {
       ],
       techs: [
         'reactIcon.png',
-        'cssIcon.png'
+        'cssIcon.png',
+        'githubIcon.png'
       ],
       githublink:'https://github.com/fcbysf/note-app',
       liveDemo: 'https://note-app-six-navy.vercel.app/'  
@@ -126,7 +127,8 @@ export default function Articles() {
       ],
       techs: [
         'reactIcon.png',
-        'cssIcon.png'
+        'cssIcon.png',
+        'githubIcon.png'
       ],
       githublink:'https://github.com/fcbysf/leo-movies',
       liveDemo: 'https://leomovies.vercel.app/'  
@@ -298,7 +300,7 @@ export default function Articles() {
                     </div>
                     <div className="btns mt-3 me-2 flex gap-1.5">
                       <Button githublink={article.githublink} />
-                      <Btn2 liveLink={article.liveDemo} />
+                      {article.liveDemo && <Btn2 liveLink={article.liveDemo} />}
                     </div>
                   </div>
                 </div>

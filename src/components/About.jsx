@@ -13,10 +13,10 @@ export default function About() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Image */}
           <div className="flex justify-center">
-            <div className="w-80 h-96 bg-gradient-to-br from-gray-300 to-gray-400 rounded-lg overflow-hidden">
+            <div className="md:w-80 md:h-96 w-68 bg-green-300 rounded-lg overflow-hidden">
               {/* Placeholder for image */}
               <img
-                src="/mee.jpg"
+                src="/mee bg.png"
                 alt="Charles"
                 className="w-full h-full object-cover snap-proximity"
               />
