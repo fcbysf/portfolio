@@ -215,7 +215,7 @@ export default function Articles() {
             {articles.map((article, index) => (
               <SwiperSlide key={index}>
                 <div
-                  className={`pt-5 pb-8 md:pb-1 rounded-lg transition-all hover:shadow-lg ${article.bgColor}`}
+                  className={`pt-5 pb-5 md:pb-1 rounded-lg transition-all hover:shadow-lg ${article.bgColor}`}
                 >
                   <h3
                     className={`mx-5 text-xl font-bold mb-4 ${article.textColor} md:flex justify-between items-center uppercase`}
