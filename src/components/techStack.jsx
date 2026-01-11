@@ -132,6 +132,7 @@ export const LogoLoop = memo(
   { src: "/python.png", alt: "python" },
   { src: "/nodejs.png", alt: "nodejs" },
   { src: "/mongodb.png", alt: "mongodb" },
+  { src: "/reactquery.png", alt: "React Query" },
 ],
     speed = 130,
     direction = 'left',

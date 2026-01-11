@@ -36,6 +36,7 @@ export default function Articles() {
         "/laravelIcon.png",
         "/mysqlIcon.png",
         "/cssIcon.png",
+        "/reactquery.png",
         "/githubIcon.png",
       ],
       githublink: "https://github.com/fcbysf/E-commerce",
