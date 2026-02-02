@@ -38,8 +38,8 @@
   },
   "projects": {
     "YSFSHOOP": {
-      "description": "This e-commerce application is built as a full-stack system with a React-based frontend and a Laravel backend. It provides RESTful APIs for product, cart, and order management, includes authentication and authorization, and uses a relational database to ensure data integrity. The architecture focuses on scalability, clean code, and efficient request handling"
-    },
+      "description" :"This e-commerce application is built as a full-stack system with a React-based frontend and a Laravel backend. In addition to standard product, cart, and order management through RESTful APIs, the platform includes a Marketplace feature where users can buy and sell their own items.A real-time chat system is implemented using WebSockets, enabling instant messaging between buyers and sellers within each listing. The chat supports message status (sent, seen), media sharing (images and audio), and optimistic UI updates for a smooth user experience.The application includes secure authentication and authorization, uses a relational database to ensure data integrity, and is designed with scalability, clean architecture, and efficient request handling in mind."
+      },
     "bloggy": {
       "description": "A multi-user blogging platform built with Laravel and React, using MySQL for data storage. Features include authentication, CRUD posts, comments, responsive design with CSS, and a dynamic, component-based UI"
     },

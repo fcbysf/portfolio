@@ -40,8 +40,8 @@
   },
   "projects": {
     "YSFSHOOP":{
-      "description": "Cette application e-commerce est développée comme un système full-stack avec un frontend React et un backend Laravel. Elle fournit des API REST pour la gestion des produits, paniers et commandes, avec authentification, autorisation et base de données relationnelle garantissant l’intégrité des données."
-    },
+      "description" :"Cette application e-commerce est conçue comme un système full-stack avec un frontend basé sur React et un backend développé en Laravel. En plus des fonctionnalités classiques de gestion des produits, du panier et des commandes via des API REST, la plateforme intègre un espace Marketplace permettant aux utilisateurs d’acheter et de vendre leurs propres articles.Un système de messagerie en temps réel a été mis en place à l’aide de WebSockets, permettant des échanges instantanés entre acheteurs et vendeurs pour chaque annonce. La messagerie prend en charge les statuts des messages (envoyé, vu), le partage de médias (images et messages audio), ainsi que des mises à jour optimistes de l’interface afin d’offrir une expérience utilisateur fluide.L’application intègre un système d’authentification et d’autorisation sécurisé, repose sur une base de données relationnelle pour garantir l’intégrité des données, et est conçue avec une architecture propre, évolutive et orientée performance."
+      },
         "bloggy" :{
       "description": "Une plateforme de blog multi-utilisateurs construite avec Laravel et React, utilisant MySQL. Elle inclut l’authentification, les opérations CRUD, les commentaires, un design responsive et une interface dynamique basée sur des composants."
     },

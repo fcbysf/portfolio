@@ -22,14 +22,25 @@ export default function Articles() {
       description: t("projects.YSFSHOOP.description"),
       image: "/ecommP.PNG",
       images: [
-        "/ecommShop.PNG",
-        "/product.PNG",
-        "/cart.PNG",
-        "/userOrders.PNG",
-        "/addProduct.PNG",
-        "/adminProducts.PNG",
-        "/aminOrders.PNG",
-        "/adminUsers.PNG",
+        "/ecommerce/Capture.PNG",
+        "/ecommerce/shop.PNG",
+        "/ecommerce/porduct.PNG",
+        "/ecommerce/cart.PNG",
+        "/ecommerce/orders.PNG",
+        "/ecommerce/dashboard.PNG",
+        "/ecommerce/adminOrders.PNG",
+        "/ecommerce/products.PNG",
+        "/ecommerce/users.PNG",
+        "/ecommerce/profile.PNG",
+        "/ecommerce/whishlist.PNG",
+        "/ecommerce/profileOrder.PNG",
+        "/ecommerce/marketplace.PNG",
+        "/ecommerce/marketplaceprd.PNG",
+        "/ecommerce/addlisting.PNG",
+        "/ecommerce/inbox.PNG",
+        "/ecommerce/conversation.PNG",
+        "/ecommerce/userListing.PNG",
+        "/ecommerce/modal.PNG",
       ],
       techs: [
         "/reactIcon.png",
@@ -37,6 +48,7 @@ export default function Articles() {
         "/mysqlIcon.png",
         "/cssIcon.png",
         "/reactquery.png",
+        "/websocket.webp",
         "/githubIcon.png",
       ],
       githublink: "https://github.com/fcbysf/E-commerce",
@@ -235,7 +247,7 @@ export default function Articles() {
                           setIsOpen(true);
                         }}
                       >
-                        <p className="opacity-90">{article.description}</p>
+                        <p className="opacity-90">{article.description.slice(0, 387)}{article.description.length > 387 && "..."}</p>
                       </div>
                     )}{" "}
                     <img
