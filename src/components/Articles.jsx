@@ -159,8 +159,12 @@ export default function Articles() {
             className="gallery md:w-3/4 mx-auto my-20 md:my-22 lg:my-20 relative"
           >
             {/* Description */}
-            <p className="text-white font-semibold opacity-95 max-w-220 m-auto px-2">
+            
+            <p className="text-white font-semibold opacity-95 max-w-220 m-auto px-2 md:hidden">
               {activeArticle.description.slice(0, 413)}
+            </p>
+            <p className="text-white font-semibold opacity-95 max-w-220 m-auto px-2 hidden md:block">
+              {activeArticle.description}
             </p>
             <div onClick={(e)=>e.stopPropagation()}>
               <Swiper
@@ -187,7 +191,7 @@ export default function Articles() {
               </Swiper>
             </div>
                 {activeArticle.description.length > 387 && 
-                            <p className="text-white font-semibold opacity-95 max-w-220 m-auto p-2">
+                            <p className="text-white font-semibold opacity-95 max-w-220 m-auto p-2 md:hidden">
                               {activeArticle.description.slice(413)}
                             </p>
 }
