@@ -106,7 +106,7 @@ export default function Articles() {
       liveDemo: "https://sales-force-maroc-crm.vercel.app/",
     },
     {
-      title : 'LIFE NOTE',
+      title: 'LIFE NOTE',
       type: "(Note Taking App)",
       bgColor: "bg-zinc-700 border border-gray-200",
       textColor: "text-white",
@@ -122,11 +122,11 @@ export default function Articles() {
         'cssIcon.png',
         'githubIcon.png'
       ],
-      githublink:'https://github.com/fcbysf/note-app',
-      liveDemo: 'https://note-app-six-navy.vercel.app/'  
+      githublink: 'https://github.com/fcbysf/note-app',
+      liveDemo: 'https://note-app-six-navy.vercel.app/'
     },
     {
-      title:'LEO MOVIES',
+      title: 'LEO MOVIES',
       type: "(Movie App)",
       bgColor: "bg-zinc-950",
       textColor: "text-[#960a16]  opacity-80  ",
@@ -143,8 +143,8 @@ export default function Articles() {
         'cssIcon.png',
         'githubIcon.png'
       ],
-      githublink:'https://github.com/fcbysf/leo-movies',
-      liveDemo: 'https://leomovies.vercel.app/'  
+      githublink: 'https://github.com/fcbysf/leo-movies',
+      liveDemo: 'https://leomovies.vercel.app/'
     }
   ];
   return (
@@ -157,35 +157,41 @@ export default function Articles() {
         >
           <div
             className="gallery md:w-3/4 mx-auto my-20 md:my-22 lg:my-20 relative"
-            onClick={(e) => e.stopPropagation()}
           >
             {/* Description */}
-            <p className="text-white font-semibold opacity-95 max-w-220 m-auto">
-              {activeArticle.description}
+            <p className="text-white font-semibold opacity-95 max-w-220 m-auto px-2">
+              {activeArticle.description.slice(0, 413)}
             </p>
+            <div onClick={(e)=>e.stopPropagation()}>
+              <Swiper
+                modules={[Keyboard, Navigation, Pagination]}
+                initialSlide={startIndex}
+                slidesPerView={1}
+                navigation
+                loop={true}
+                mousewheel={true}
+                keyboard={true}
+                spaceBetween={30}
+                pagination={{ clickable: true }}
+                className="rounded-2xl"
+              >
+                {[activeArticle.image, ...activeArticle.images].map((img, i) => (
+                  <SwiperSlide key={i} className="rounded-2xl">
+                    <img
+                      src={img}
+                      className="w-full h-full md:h-120 mt-5 md:mt-3 lg:mt-0 object-contain"
+                      alt=""
+                    />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
+                {activeArticle.description.length > 387 && 
+                            <p className="text-white font-semibold opacity-95 max-w-220 m-auto p-2">
+                              {activeArticle.description.slice(413)}
+                            </p>
+}
 
-            <Swiper
-              modules={[Keyboard, Navigation, Pagination]}
-              initialSlide={startIndex}
-              slidesPerView={1}
-              navigation
-              loop={true}
-              mousewheel={true}
-              keyboard={true}
-              spaceBetween={30}
-              pagination={{ clickable: true }}
-              className="rounded-2xl"
-            >
-              {[activeArticle.image, ...activeArticle.images].map((img, i) => (
-                <SwiperSlide key={i} className="rounded-2xl">
-                  <img
-                    src={img}
-                    className="w-full h-full md:h-120 mt-5 md:mt-3 lg:mt-0 object-contain"
-                    alt=""
-                  />
-                </SwiperSlide>
-              ))}
-            </Swiper>
           </div>
         </div>
       )}
@@ -265,10 +271,9 @@ export default function Articles() {
                     <div className="hidden md:block images w-2/3 h-fit">
                       {article.images.map((image, index) => (
                         <div
-                          className={`${
-                            index == 1 &&
+                          className={`${index == 1 &&
                             "w-full h-40 relative opacity-80 flex justify-center items-center bg-gray-900 "
-                          }`}
+                            }`}
                           key={index}
                           onClick={() => {
                             setActiveArticle(article);
@@ -279,9 +284,8 @@ export default function Articles() {
                           <img
                             src={image}
                             alt=""
-                            className={`h-40 object-cover w-90 rounded cursor-pointer ${
-                              index >= 2 && "hidden"
-                            } ${index == 1 && "absolute opacity-30"}`}
+                            className={`h-40 object-cover w-90 rounded cursor-pointer ${index >= 2 && "hidden"
+                              } ${index == 1 && "absolute opacity-30"}`}
                           />
                           {index == 1 && (
                             <h1 className="absolute top-1/2 -translate-y-1/2 text-white text-3xl opacity-90 cursor-pointer">
