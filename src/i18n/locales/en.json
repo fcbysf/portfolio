@@ -44,7 +44,7 @@
       "description": "A multi-user blogging platform built with Laravel and React, using MySQL for data storage. Features include authentication, CRUD posts, comments, responsive design with CSS, and a dynamic, component-based UI"
     },
     "CRM": {
-      "description": "A React-based CRM using Redux Toolkit (RTK) for state management. It features opportunity management with CRUD operations and a drag-and-drop sales pipeline, all built with a responsive Tailwind CSS frontend for seamless user interaction"
+      "description": "CRM developed with React and Redux Toolkit for efficient state management. It provides full opportunity management with CRUD operations, a drag-and-drop sales pipeline, and a responsive interface built with Tailwind CSS. The system enables tracking prospects, managing the sales workflow, and easily visualizing deal progress. The project includes secure user authentication with admin and sales roles, as well as an analytical dashboard for performance tracking. Real-time notifications enhance the responsiveness of the sales team. The application is optimized for performance and maintainability, using a modular architecture that makes it easy to add new features."
     },
     "lifenote" :{
       "description": "Note App is a secure note-taking application with authentication and protected routes. Users can create, edit, delete, and view notes (CRUD) stored in a JSON server API. Notes can be filtered by category and searched via a search bar for quick access."

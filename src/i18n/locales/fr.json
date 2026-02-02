@@ -46,8 +46,8 @@
       "description": "Une plateforme de blog multi-utilisateurs construite avec Laravel et React, utilisant MySQL. Elle inclut l’authentification, les opérations CRUD, les commentaires, un design responsive et une interface dynamique basée sur des composants."
     },
     "CRM" : {
-      "description": "Un CRM basé sur React utilisant Redux Toolkit pour la gestion de l’état. Il propose la gestion des opportunités avec opérations CRUD et un pipeline de ventes en drag-and-drop, avec une interface Tailwind CSS responsive."
-    },
+      "description" : "CRM développé avec React et Redux Toolkit pour la gestion efficace de l’état. Offre la gestion complète des opportunités avec CRUD, un pipeline de ventes drag-and-drop et une interface responsive en Tailwind CSS. Permet de suivre les prospects, gérer le workflow de vente et visualiser facilement l’avancement des deals. Le projet intègre la connexion sécurisée des utilisateurs avec rôles admin et commercial, et un tableau de bord analytique pour le suivi des performances. Les notifications en temps réel améliorent la réactivité de l’équipe commerciale. L’application est optimisée pour la performance et la maintenabilité, avec une architecture modulaire facilitant l’ajout de nouvelles fonctionnalités"
+      },
     "lifenote" :{
       "description": "Note App est une application sécurisée pour la prise de notes avec authentification et routes protégées. Les utilisateurs peuvent créer, modifier, supprimer et consulter des notes (CRUD) stockées dans une API JSON server. Les notes peuvent être filtrées par catégorie et recherchées rapidement via la barre de recherche."
     },
