@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 export default function Articles() {
   const { t } = useTranslation();
@@ -147,6 +147,12 @@ export default function Articles() {
       liveDemo: 'https://leomovies.vercel.app/'
     }
   ];
+  useEffect(()=>{
+    if(isOpen){
+      document.body.classList.add("overflow-hidden")
+    }
+    return ()=>document.body.classList.remove("overflow-hidden")
+  },[isOpen])
   return (
     <section id="projects" className="bg-white py-20 md:py-32 z-40 relative">
       {isOpen && activeArticle && (
